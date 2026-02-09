@@ -1,0 +1,8 @@
+{
+  "name": "AuraFit AI - Elite Sports & Fitness",
+  "description": "A premium, futuristic AI-powered sports and fitness platform featuring personalized workout plans, smart nutrition systems, and a high-performance training hub.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

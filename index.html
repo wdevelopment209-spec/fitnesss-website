@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraFit AI | Elite Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #000000;
+            --accent-blue: #00f2ff;
+            --accent-red: #ff3c3c;
+            --glass-white: rgba(255, 255, 255, 0.03);
+            --border-white: rgba(255, 255, 255, 0.08);
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        .font-sync {
+            font-family: 'Syncopate', sans-serif;
+            letter-spacing: -0.05em;
+        }
+
+        .glass-panel {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-white);
+        }
+
+        .luxury-card {
+            background: #080808;
+            border: 1px solid var(--border-white);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .luxury-card:hover {
+            border-color: rgba(0, 242, 255, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 242, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .glow-button-blue {
+            position: relative;
+            background: white;
+            color: black;
+            transition: all 0.3s ease;
+        }
+
+        .glow-button-blue:hover {
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.6);
+            background: var(--accent-blue);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to bottom, #ffffff, #888888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .animated-gradient-bg {
+            background: linear-gradient(-45deg, #000000, #0a0a0a, #050505, #000000);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-blue);
+        }
+
+        .reveal-up {
+            animation: revealUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+
+        @keyframes revealUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="animated-gradient-bg">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
